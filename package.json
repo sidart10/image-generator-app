@@ -1,7 +1,8 @@
 {
-  "name": "template-2",
+  "name": "image-generator-app",
   "version": "0.1.0",
   "private": true,
+  "description": "AI-powered image generation application built with Next.js and Replicate API",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

@@ -29,7 +29,10 @@ export async function POST(request: Request) {
       }
     );
 
-    return NextResponse.json({ output }, { status: 200 });
+    // The output is an array of image URLs
+    const imageUrl = Array.isArray(output) && output.length > 0 ? output[0] : null;
+    
+    return NextResponse.json({ imageUrl }, { status: 200 });
   } catch (error) {
     console.error("Error from Replicate API:", error);
     return NextResponse.json({ error: (error as Error).message }, { status: 500 });

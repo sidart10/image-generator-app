@@ -1,15 +1,39 @@
-# Ansh & Riley Full-Stack Template
+# AI Image Generator App
 
-This is a full-stack template project for Software Composers to create  applications with AI.
+This is an AI-powered image generation application built with Next.js and Replicate API. The app allows users to create images from text prompts using state-of-the-art AI models.
 
-## Getting started
-To create a new project, you go to `/paths`, choose from our list of Paths, and then use Cursor's Composer feature to quickly scaffold your project!
+## Features
 
-You can also edit the Path's prompt template to be whatever you like!
+- Generate images from text descriptions
+- Powered by Stable Diffusion via Replicate API
+- Modern UI built with React and Tailwind CSS
+- Next.js 14 App Router for efficient routing and rendering
 
-## Technologies used
-This doesn't really matter, but is useful for the AI to understand more about this project. We are using the following technologies
+## Technologies Used
+
 - React with Next.js 14 App Router
-- TailwindCSS
-- Firebase Auth, Storage, and Database
-- Multiple AI endpoints including OpenAI, Anthropic, and Replicate using Vercel's AI SDK
+- TailwindCSS for styling
+- Replicate API for AI image generation
+- Firebase for authentication and storage (optional)
+- Vercel AI SDK for handling AI interactions
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies with `npm install`
+3. Create a `.env.local` file with your API keys:
+   ```
+   REPLICATE_API_TOKEN=your_replicate_api_token
+   ```
+4. Run the development server with `npm run dev`
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## Environment Variables
+
+The following environment variables are required:
+
+- `REPLICATE_API_TOKEN`: Your Replicate API token
+
+## License
+
+This project is open source and available under the MIT License.
